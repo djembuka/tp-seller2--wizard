@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller2 wizard Progress bar</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <div class="slr2-wizard-page-content">
+      <img
+        src="../assets/slr2-wizard-logo.svg"
+        width="316"
+        height="100"
+        alt="Seller"
+        class="slr2-wizard-logo"
+      />
+
+      <div class="slr2-wizard-text">
+        Установка готового интернет-магазина для продажи одежды и аксессуаров.
+      </div>
+
+      <div class="slr2-wizard-load">
+        <div class="instal-load-block" id="result">
+          <div class="instal-load-label" id="status">
+            Копирование файлов и настройка сайта...
+          </div>
+          <div class="instal-progress-bar-outer" style="width: 670px">
+            <div class="instal-progress-bar-alignment">
+              <div
+                class="instal-progress-bar-inner"
+                id="indicator"
+                style="width: 50%"
+              >
+                <div
+                  class="instal-progress-bar-inner-text"
+                  style="width: 670px"
+                  id="percent"
+                >
+                  50%
+                </div>
+              </div>
+              <span id="percent2">50%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slr2-wizard-alert">
+        <svg
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="M12.5 12V7.5M12.5 15.3354V15.375M21.5 12C21.5 16.9706 17.4706 21 12.5 21C7.52944 21 3.5 16.9706 3.5 12C3.5 7.02944 7.52944 3 12.5 3C17.4706 3 21.5 7.02944 21.5 12Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+        <div class="slr2-wizard-alert-text">
+          Уважаемый пользователь! К сожалению, при выполнении вашего запроса
+          произошла ошибка.
+        </div>
+      </div>
+
+      <div class="slr2-wizard-progress-bar-button">
+        <div class="instal-btn-wrap">
+          <input
+            class="wizard-prev-button"
+            type="submit"
+            name="StepPrevious"
+            value="< Назад"
+          />
+          <input
+            class="wizard-prev-button"
+            type="submit"
+            name="StepNext"
+            value="Далее >"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>

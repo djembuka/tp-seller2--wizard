@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller2 wizard Welcome</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <div class="slr2-wizard-page-content">
+      <img
+        src="../assets/slr2-wizard-logo.svg"
+        width="316"
+        height="100"
+        alt="Seller"
+        class="slr2-wizard-logo"
+      />
+
+      <div class="slr2-wizard-text">
+        Установка готового интернет-магазина для продажи одежды и аксессуаров.
+      </div>
+
+      <div class="slr2-wizard-switcher-block">
+        <div class="slr2-wizard-switcher">
+          <div class="slr2-wizard-switcher-left-bg"></div>
+          <div class="slr2-wizard-switcher-right-bg"></div>
+          <div
+            class="slr2-wizard-switcher-item slr2-wizard-switcher-item--left"
+          >
+            Существующий сайт
+          </div>
+          <div
+            class="slr2-wizard-switcher-item slr2-wizard-switcher-item--right"
+          >
+            Новый сайт
+          </div>
+        </div>
+        <input
+          type="radio"
+          id="createSiteY"
+          class="solution-radio"
+          name="__wiz_createSite"
+          value="Y"
+        />
+        <input
+          type="radio"
+          id="createSiteN"
+          class="solution-radio"
+          name="__wiz_createSite"
+          value="N"
+        />
+      </div>
+
+      <div id="slr2WizardTab1" class="slr2-wizard-tab">
+        <input name="__wiz_siteID" value="" type="hidden" />
+        <select name="__wiz_siteID">
+          <option value="s1">[s1] Сайт по умолчанию</option>
+          <option value="st" selected="selected">[st] Site test</option>
+        </select>
+        <div>
+          Выберите сайт, куда вы хотите установить решение. Обратите внимание,
+          что установка на существующий сайт может привести к ошибкам, поэтому
+          рекомендуем устанавливать на новый сайт.
+        </div>
+      </div>
+
+      <div id="slr2WizardTab2" class="slr2-wizard-tab">
+        <div class="twpx-form-control twpx-form-control--text">
+          <div class="twpx-form-control__label">ID сайта</div>
+          <input
+            type="text"
+            id="ID_INPUT"
+            name="ID_INPUT"
+            autocomplete="off"
+            class="twpx-form-control__input"
+          />
+          <div class="twpx-form-control__hint"></div>
+        </div>
+
+        <div class="twpx-form-control twpx-form-control--text">
+          <div class="twpx-form-control__label">Директория сайта</div>
+          <input
+            type="text"
+            id="DIR_INPUT"
+            name="DIR_INPUT"
+            autocomplete="off"
+            class="twpx-form-control__input"
+          />
+          <div class="twpx-form-control__hint"></div>
+        </div>
+      </div>
+
+      <div class="slr2-wizard-alert">
+        <svg
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="M12.5 12V7.5M12.5 15.3354V15.375M21.5 12C21.5 16.9706 17.4706 21 12.5 21C7.52944 21 3.5 16.9706 3.5 12C3.5 7.02944 7.52944 3 12.5 3C17.4706 3 21.5 7.02944 21.5 12Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+        <div class="slr2-wizard-alert-text">
+          Уважаемый пользователь! К сожалению, при выполнении вашего запроса
+          произошла ошибка.
+        </div>
+      </div>
+
+      <div class="slr2-wizard-install-button">
+        <div class="slr2-wizard-install-button-wrap">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="slr2-wizard-icon-play"
+          >
+            <g>
+              <path
+                d="M17.9733 10.9373C19.3397 11.6988 19.3447 12.6568 17.9733 13.5177L7.37627 20.6645C6.04478 21.3751 5.14046 20.9556 5.04553 19.418L5.00057 4.45982C4.97059 3.04355 6.13721 2.6434 7.24887 3.32244L17.9733 10.9373Z"
+                stroke="white"
+                stroke-width="2"
+              />
+            </g>
+          </svg>
+          <div class="instal-btn-wrap">
+            <input
+              class="wizard-prev-button"
+              type="submit"
+              name="StepPrevious"
+              value="< Назад"
+            />
+            <input
+              class="wizard-prev-button"
+              type="submit"
+              name="StepNext"
+              value="Далее >"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
