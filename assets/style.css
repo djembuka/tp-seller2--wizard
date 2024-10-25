@@ -496,10 +496,10 @@ body {
   position: relative;
 }
 
-.instal-btn-wrap .wizard-prev-button:first-child {
+.instal-btn-wrap .wizard-prev-button {
   display: none;
 }
-.instal-btn-wrap .wizard-prev-button:last-child {
+.instal-btn-wrap .wizard-next-button {
   border: 0;
   border-radius: 8px;
   background: var(--slr2-wizard-bg-transparent);
@@ -512,11 +512,11 @@ body {
   -webkit-transition: background-color 0.6s cubic-bezier(0.25, 0.74, 0.22, 0.99);
   transition: background-color 0.6s cubic-bezier(0.25, 0.74, 0.22, 0.99);
 }
-.slr2-wizard-install-button .instal-btn-wrap .wizard-prev-button:last-child {
+.slr2-wizard-install-button .instal-btn-wrap .wizard-next-button {
   padding: 0 48px 0 calc(48px + 34px);
 }
 
-.instal-btn-wrap .wizard-prev-button:last-child:hover {
+.instal-btn-wrap .wizard-next-button:hover {
   background-color: var(--slr2-wizard-button-hover);
 }
 .slr2-wizard-install-button .slr2-wizard-icon-play {

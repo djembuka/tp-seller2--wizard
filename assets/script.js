@@ -75,7 +75,7 @@ window.addEventListener('load', () => {
     .querySelectorAll('.slr2-wizard-install-button')
     .forEach((installButton) => {
       installButton
-        .querySelectorAll('.wizard-prev-button')[1]
+        .querySelector('.wizard-next-button')
         .setAttribute('value', 'Установить');
     });
 
@@ -84,7 +84,7 @@ window.addEventListener('load', () => {
     .querySelectorAll('.slr2-wizard-progress-bar-button')
     .forEach((installButton) => {
       installButton
-        .querySelectorAll('.wizard-prev-button')[1]
+        .querySelector('.wizard-next-button')
         .setAttribute('value', 'Повторить');
     });
 
@@ -93,7 +93,7 @@ window.addEventListener('load', () => {
     .querySelectorAll('.slr2-wizard-confirmation-button')
     .forEach((installButton) => {
       installButton
-        .querySelectorAll('.wizard-prev-button')[1]
+        .querySelector('.wizard-next-button')
         .setAttribute('value', 'Начать настройки');
     });
 
