@@ -7,8 +7,8 @@ window.addEventListener('load', () => {
     const rightItem = switcher.querySelector(
       '.slr2-wizard-switcher-item--right'
     );
-    const leftCheckbox = document.getElementById('createSiteY');
-    const rightCheckbox = document.getElementById('createSiteN');
+    const rightCheckbox = document.getElementById('createSiteY');
+    const leftCheckbox = document.getElementById('createSiteN');
 
     leftBg.style.width = `${leftItem.clientWidth - 4}px`;
     rightBg.style.width = `${rightItem.clientWidth - 4}px`;
@@ -44,9 +44,7 @@ window.addEventListener('load', () => {
           .getElementById('slr2WizardTab2')
           .classList.remove('slr2-wizard-tab--active');
         //radio
-        document
-          .getElementById('createSiteY')
-          .setAttribute('checked', 'checked');
+        leftCheckbox.setAttribute('checked', 'checked');
         leftCheckbox.click();
         rightCheckbox.removeAttribute('checked');
       } else {
@@ -61,9 +59,7 @@ window.addEventListener('load', () => {
           .getElementById('slr2WizardTab2')
           .classList.add('slr2-wizard-tab--active');
         //radio
-        document
-          .getElementById('createSiteN')
-          .setAttribute('checked', 'checked');
+        rightCheckbox.setAttribute('checked', 'checked');
         rightCheckbox.click();
         leftCheckbox.removeAttribute('checked');
       }
