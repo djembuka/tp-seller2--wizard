@@ -1,7 +1,8 @@
 :root {
   --slr2-wizard-bg: #0a16aa;
   --slr2-wizard-bg-transparent: #ffffff33;
-  --slr2-wizard-button-hover: #2f39b7;
+  --slr2-wizard-bg-transparent-hover: #ffffff22;
+  --slr2-wizard-button-hover: #ffffff22; /*#2f39b7;*/
   --slr2-wizard-color: #fff;
   --slr2-wizard-font-size: 16px;
   --slr2-wizard-font-family: 'Open Sans', Arial, sans-serif;
@@ -480,6 +481,24 @@ body {
   justify-content: flex-start;
   margin-bottom: 32px;
 }
+.wizard-retry-button,
+.wizard-skip-button {
+  border: 0;
+  border-radius: 8px;
+  background: var(--slr2-wizard-bg-transparent);
+  height: 72px;
+  padding: 0 48px;
+  color: var(--slr2-wizard-color);
+  font-size: var(--slr2-wizard-font-size);
+  font-family: var(--slr2-wizard-font-family);
+  cursor: pointer;
+  -webkit-transition: background-color 0.6s cubic-bezier(0.25, 0.74, 0.22, 0.99);
+  transition: background-color 0.6s cubic-bezier(0.25, 0.74, 0.22, 0.99);
+}
+.wizard-retry-button:hover,
+.wizard-skip-button:hover {
+  background-color: var(--slr2-wizard-button-hover);
+}
 
 .slr2-wizard-install-button,
 .slr2-wizard-progress-bar-button,
@@ -525,7 +544,11 @@ body {
   left: 48px;
   margin-top: -12px;
   pointer-events: none;
+  display: none;
   z-index: 10;
+}
+.slr2-wizard-install-button .slr2-wizard-icon-play--show {
+  display: block;
 }
 
 /*Progress bar*/

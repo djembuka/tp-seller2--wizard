@@ -66,36 +66,14 @@ window.addEventListener('load', () => {
     });
   });
 
-  //install button
-  document
-    .querySelectorAll('.slr2-wizard-install-button')
-    .forEach((installButton) => {
-      installButton
-        .querySelector('.wizard-next-button')
-        .setAttribute('value', 'Установить');
-    });
-
-  //progress bar button
-  document
-    .querySelectorAll('.slr2-wizard-progress-bar-button')
-    .forEach((installButton) => {
-      installButton
-        .querySelector('.wizard-next-button')
-        .setAttribute('value', 'Повторить');
-    });
-
-  //confirmation button
-  document
-    .querySelectorAll('.slr2-wizard-confirmation-button')
-    .forEach((installButton) => {
-      installButton
-        .querySelector('.wizard-next-button')
-        .setAttribute('value', 'Начать настройки');
-    });
-
   //control text
   document.querySelectorAll('.twpx-form-control--text').forEach((text) => {
     const control = text.querySelector('input');
+
+    if (control.value.trim()) {
+      text.classList.add('twpx-form-control--active');
+    }
+
     control.addEventListener('focus', () => {
       text.classList.add('twpx-form-control--active');
     });
@@ -180,4 +158,12 @@ window.addEventListener('load', () => {
       tab1.querySelector('[name="__wiz_siteID"]').value = value;
     }
   })();
+
+  //icon play
+
+  document.querySelectorAll('.slr2-wizard-icon-play').forEach((icon) => {
+    if (icon.parentNode.querySelectorAll('input').length) {
+      icon.classList.add('slr2-wizard-icon-play--show');
+    }
+  });
 });
