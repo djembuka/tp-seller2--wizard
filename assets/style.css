@@ -371,7 +371,7 @@ body {
 }
 .slr2-wizard-page-content {
   width: 100%;
-  max-width: 660px;
+  max-width: 593px;
   margin: 128px auto;
 }
 .slr2-wizard-page-content a,
@@ -379,6 +379,14 @@ body {
 .slr2-wizard-page-content a:focus,
 .slr2-wizard-page-content a:visited {
   color: var(--slr2-wizard-color);
+}
+.slr2-wizard-page-content hr {
+  border: 0;
+  padding: 8px;
+  margin: 0;
+}
+.slr2-wizard-page-content--welcome {
+  width: 480px;
 }
 .slr2-wizard-logo {
   margin: 0 auto 32px;
@@ -468,6 +476,9 @@ body {
   justify-content: flex-start;
   margin-bottom: 32px;
 }
+.slr2-wizard-alert svg {
+  flex-shrink: 0;
+}
 
 .slr2-wizard-message {
   background-color: var(--slr2-wizard-bg-transparent);
@@ -481,19 +492,25 @@ body {
   justify-content: flex-start;
   margin-bottom: 32px;
 }
+.slr2-wizard-message svg {
+  flex-shrink: 0;
+}
 .wizard-retry-button,
 .wizard-skip-button {
   border: 0;
   border-radius: 8px;
   background: var(--slr2-wizard-bg-transparent);
-  height: 72px;
-  padding: 0 48px;
+  height: 35px;
+  padding: 0 16px;
   color: var(--slr2-wizard-color);
-  font-size: var(--slr2-wizard-font-size);
+  font-size: 14px;
   font-family: var(--slr2-wizard-font-family);
   cursor: pointer;
   -webkit-transition: background-color 0.6s cubic-bezier(0.25, 0.74, 0.22, 0.99);
   transition: background-color 0.6s cubic-bezier(0.25, 0.74, 0.22, 0.99);
+}
+.wizard-retry-button {
+  margin-right: 12px;
 }
 .wizard-retry-button:hover,
 .wizard-skip-button:hover {
@@ -553,8 +570,10 @@ body {
 
 /*Progress bar*/
 .slr2-wizard-load {
-  width: 600px;
   margin: 0 auto 32px;
+}
+.instal-load-block {
+  margin: 0 32px;
 }
 .slr2-wizard-load #indicator.instal-progress-bar-inner {
   background-color: #fff;
@@ -568,9 +587,13 @@ body {
   background-color: var(--slr2-wizard-bg-transparent);
 }
 .slr2-wizard-load #percent.instal-progress-bar-inner-text,
-.slr2-wizard-load #percent2,
-.slr2-wizard-load #status.instal-load-label {
+.slr2-wizard-load #percent2 {
   display: none;
+}
+.slr2-wizard-load #status.instal-load-label {
+  font-size: 12px;
+  margin-top: 8px;
+  height: 16px;
 }
 .slr2-wizard-tab {
   display: none;
